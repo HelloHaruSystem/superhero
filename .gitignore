@@ -24,3 +24,10 @@ packages/
 *.nupkg
 project.lock.json
 project.assets.json
+
+# docker files
+docker-compose.yml
+Dockerfile.postgresql
+
+# db-setup file
+db-setup.sql
