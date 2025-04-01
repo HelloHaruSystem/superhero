@@ -15,6 +15,7 @@ namespace super_hero.Models
 
         [ForeignKey("PostCode")]
         public int PostCode { get; set; }
+        public PostCode PostCodeNav { get; set; } 
         
 
         // add Icollections for one to many relationships (Problems, Superheroes, leaders)
