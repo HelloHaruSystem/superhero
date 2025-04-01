@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace super_hero.Models
 {
-    public class leader
+    public class Leader
     {
         [Key]
         public int Id { get; set; }
