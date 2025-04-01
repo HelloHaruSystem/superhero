@@ -1,19 +1,19 @@
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace super_hero.Models 
+namespace super_hero.Models
 {
-    public class Problems
+    public class leader
     {
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "A description is required")]
-        public string Description { get; set; }
+        [Required(ErrorMessage = "A name of the leader is required")]
+        [MaxLength(75)]
+        public string Name { get; set; }
 
         [ForeignKey("Department")]
-        public int DepartmentID { get; set; }
+        public int DepartmentId { get; set; }
         public Department Department { get; set; }
     }
 }

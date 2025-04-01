@@ -9,12 +9,13 @@ namespace super_hero.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "An description is required")]
-        public string Description { get; set; }
+        [Required(ErrorMessage = "A department name is required")]
+        [MaxLength(100)]
+        public string Name { get; set; }
 
         [ForeignKey("PostCode")]
         public int PostCode { get; set; }
-
+        
 
         // add Icollections for one to many relationships (Problems, Superheroes, leaders)
     }

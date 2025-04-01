@@ -8,7 +8,7 @@ namespace super_hero.Models
         [Key]
         public int PostalCode { get; set; }
 
-        [Required(ErrorMessage = "An Key is required")]
+        [Required(ErrorMessage = "A city name is required")]
         [MaxLength(100)]
         public string CityName { get; set; }
 
