@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace super_hero.Models 
 {
-    public class Problems
+    public class Problem
     {
         [Key]
         public int Id { get; set; }
