@@ -16,7 +16,7 @@ namespace super_hero.Data
         public DbSet<Problem> Problems { get; set; }
         public DbSet<Superhero> Superheroes { get; set; }
         public DbSet<HeroicAct> HeroicActs { get; set; }
-        public DbSet<leader> Leaders { get; set; }  
+        public DbSet<Leader> Leaders { get; set; }  
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
