@@ -9,8 +9,8 @@ namespace super_hero.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "An Key is required")]
-        public string description { get; set; }
+        [Required(ErrorMessage = "An description is required")]
+        public string Description { get; set; }
 
         [ForeignKey("PostCode")]
         public int PostCode { get; set; }
