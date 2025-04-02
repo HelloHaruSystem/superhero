@@ -21,7 +21,15 @@ namespace super_hero.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // keeps Entity Frameworks default behavior
+            modelBuilder.Entity<PostCode>()
+                .ToTable("postal_codes")
+                .Property(p => p.PostalCode)
+                .HasColumnName("postal_code");
+            
+            modelBuilder.Entity<PostCode>()
+                .Property(p => p.CityName)
+                .HasColumnName("city_name");
+
             base.OnModelCreating(modelBuilder);
         }
     }
